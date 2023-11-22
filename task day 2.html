@@ -1,0 +1,265 @@
+<html>
+    <body>
+        <script>
+//             1) Countdown:*
+//    Write a program that prints numbers from 10 to 1 in descending order using a `while` loop.
+     var a=10;
+    while(a>=1){
+    console.log(a);
+    a--
+    }
+//   output ;10,9,8,7,6,5,4,3,2,1
+
+// 2. *Square Numbers:*
+//    Create a program that prints the square of numbers from 1 to 10 using a `for` loop.
+     
+for(var a=1;a<=10;a++){
+ 
+ console.log(a*a)
+
+}
+//  output =1,4,8,16,25,,36,49,64,81,100
+
+// Even Numbers:*
+// Write a program that prints even numbers from 2 to 20 using a `for` loop.
+for(var a=2;a<=20;a+=2){
+   
+   console.log(a)
+}
+//  output; 2,4,6,8,10,12,14,16,18,20
+
+// 
+// *Skip Numbers:*
+//    Write a program that prints numbers from 1 to 20, skipping every second number (1, 3, 5, 7, 9, 11, 13, 15, 17, 19) using a `for` loop.
+
+for(a=1;a<=20;a+=2){
+ console.log(a);
+}
+// output=1,3,5,7,9,11,13,15,17,19
+
+// *Even or Odd (Expanded):*
+//     Write a program that prints whether a number is even or odd for numbers 1 to 20 using a `for` loop.
+for( a=1;a<=20;a++){
+    if(a%2==0){
+        console.log(a+ "is even");
+    }
+    else{
+        console.log(a+"is odd");
+    }
+}
+// output;1is odd
+// 2is even
+// 3is odd
+// 4is even
+// 5is odd
+// 6is even
+// 7is odd
+// 8is even
+// 9is odd
+// 10is even
+// 11is odd
+// 12is even
+// 13is odd
+// 14is even
+// 15is odd
+// 16is even
+// 17is odd
+// 18is even
+// 19is odd
+// 20is even
+
+// *Sum of Digits:*
+//    Write a program that calculates the sum of digits for numbers from 1 to 20 using a `while` loop.
+
+var a=1;
+var count=0;
+while(a<=20){
+    count=count+a;
+    a++;
+}
+console.log(count);
+
+// 0utput; 210
+
+// *Cube Numbers:*
+//     Create a program that prints the cube of numbers from 1 to 10 using a `while` loop.
+
+var a=1;
+
+while(a<=10){
+   console.log(a*a*a);
+    a++;
+}
+
+// output;1
+// 8
+// 27
+// 64
+// 125
+// 216
+// 343
+// 512
+// 729
+// 1000
+
+// *Reverse Countdown:*
+//     Write a program that prints numbers from 20 to 1 in descending order using a `for` loop.
+
+for(a=20;a>=1;a--){
+    console.log(a);
+}
+
+// output;20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1
+
+// *Divisible by 3:*
+//     Write a program that prints numbers from 1 to 30, marking each number divisible by 3 with an asterisk (*) using a `while` loop.
+
+var i=1;
+while(i<=30){
+    if(i%3==0){
+        console.log(i+"*");
+        i++;
+    }
+    console.log(i);
+    i++;
+}
+}
+
+    // output; 3,6,9,12,15,18,21,24,27,30
+
+    // *Sum of Even Numbers:*
+    // Calculate and print the sum of even numbers from 1 to 20 using a `while` loop.
+
+    var a=0;
+var count=0;
+while(a<=20){
+    count=count+a;
+    a+=2;
+}
+
+console.log(count);
+
+// output;110
+
+
+// *Squares and Cubes:*
+//     Print a table that shows the square and cube of numbers from 1 to 10 using a `for` loop.
+    
+//     Number | Square | Cube
+//     -----------------------
+//     1      | 1      | 1
+//     2      | 4      | 8
+//     3      | 9      | 27
+
+for(a=1;a<=10;a++){
+    console.log(a);
+}
+for(b=1;b<=10;b++){
+    console.log(b*b);
+}
+for(c=1;c<=10;c++){
+    console.log(c*c*c);
+}
+
+// output:1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// 1
+// 4
+// 9
+// 16
+// 25
+// 36
+// 49
+// 64
+// 81
+// 100
+// 1
+// 8
+// 27
+// 64
+// 125
+// 216
+// 343
+// 512
+// 729
+// 1000
+
+
+// *Factorial with a Twist:*
+//    Modify the factorial program to print the factorial of numbers from 1 to 10 using a `for` loop.
+
+var fact=1;
+for(a=1;a<=10;a++){
+    fact=fact*a;
+    console.log(fact)
+}
+
+// output;1
+// 2
+// 6
+// 24
+// 120
+// 720
+// 5040
+// 40320
+// 362880
+// 3628800
+
+// Write a program that prints leap years between 1900 and 2023 using a `for` loop.
+
+for(a=1900;a<=2023;a++){
+    if(a%4==0){
+        console.log(a);
+    }
+}
+
+// output;1904,1908.........,2020
+// *Triangle Pattern (Numeric):*
+//    Print a numeric pattern where each line contains numbers from 1 to the line number. For example:
+   
+//    1
+//    1 2
+//    1 2 3
+//    1 2 3 4
+//    1 2 3 4 5
+
+var a="";
+ for(var i=1;i<=5;i++){
+     for(var j=1;j<=i;j++){
+         a=a+j;
+     }
+     a=a+"\n"
+ }
+ console.log(a);
+
+//  *Alternate Pattern:*
+//     Create a program that prints an alternate pattern of `*` and `-` for 5 rows:
+    
+//     *-*
+//     *-*
+//     *-*
+//     *-*
+//     *-*
+
+for(v=1;v<=5;v++){
+    console.log("*-*");
+}
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
